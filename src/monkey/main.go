@@ -1,10 +1,13 @@
 package main
 
 import (
+	// general
 	"fmt"
-	"monkey/repl"
 	"os"
 	"os/user"
+
+	// specific
+	"monkey/repl"
 )
 
 func main() {

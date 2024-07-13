@@ -124,6 +124,9 @@ func (l *Lexer) NextToken() token.Token {
 	return tok
 }
 
+// --------------------------------------------------
+// UTILS
+// --------------------------------------------------
 func (l *Lexer) skipWhitespace() {
 	for l.ch == ' ' || l.ch == '\t' || l.ch == '\n' || l.ch == '\r' {
 		l.readChar()
