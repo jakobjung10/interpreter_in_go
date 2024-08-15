@@ -15,6 +15,7 @@ const (
 	IDENT  = "IDENT" // add, foobar, x, y, ...
 	INT    = "INT"   // 1343456
 	STRING = "STRING"
+	MACRO  = "MACRO"
 
 	// Operators
 	ASSIGN   = "="
@@ -60,6 +61,7 @@ var keywords = map[string]TokenType{
 	"if":     IF,
 	"else":   ELSE,
 	"return": RETURN,
+	"macro":  MACRO,
 }
 
 func LookupIdent(ident string) TokenType {
